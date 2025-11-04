@@ -9,16 +9,16 @@ public class Main {
     static Scanner s = new Scanner(System.in);
 
     public static void seedData(){
-        ListOfItems.add(new Item("Kulkas", "Elektronik", 4800000));
-        ListOfItems.add(new Item("TV", "Elektronik", 1280000));
-        ListOfItems.add(new Item("Laptop", "Komputer", 6000000));
-        ListOfItems.add(new.Item("PC", "Komputer", 12000000));
+        ListOfItems.add(new Item("Kulkas","Elektronik",4800000));
+        ListOfItems.add(new Item("TV","Elektronik",1280000));
+        ListOfItems.add(new Item("Laptop","Komputer",6000000));
+        ListOfItems.add(new Item("PC","Komputer",12000000));
     }
 
     public static void printItem(Item item){
-        System.out.printf("Nama     : "+item.getName());
-        System.out.printf("Tipe     : "+item.getType());
-        System.out.printf("Harga    : "+item.getPrice());
+        System.out.println("Nama     : "+item.getName());
+        System.out.println("Tipe     : "+item.getType());
+        System.out.println("Harga    : "+item.getPrice());
     }
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Main {
         int id = 0;
         seedData();
         do{
-            System.out.printf("---Program Toko Elektronik---");
+            System.out.println("---Program Toko Elektronik---");
             System.out.println("1. Pesan Barang");
             System.out.println("2. Lihat Pesanan");
             System.out.println("0. Keluar");
@@ -36,7 +36,7 @@ public class Main {
                 for(int i = 0; i<ListOfItems.size(); i++){
                     System.out.println("No  : "+(i+1));
                     printItem(ListOfItems.get(i));
-                    System.out.println("-------------------");
+                    System.out.println("----------------------");
                 }
                 System.out.println("Pilih   : ");
             }

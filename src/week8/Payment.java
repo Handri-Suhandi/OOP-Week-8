@@ -1,6 +1,6 @@
 package week8;
 
-public class Payment {
+public abstract class Payment {
     protected boolean isPaidOff;
     protected Item item;
 
@@ -25,7 +25,7 @@ public class Payment {
     }
 
     public String getItemName(){
-        return item.getName()
+        return item.getName();
     }
 
     public String getStatus(){
